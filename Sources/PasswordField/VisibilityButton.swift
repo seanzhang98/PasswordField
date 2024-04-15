@@ -15,6 +15,7 @@ struct VisibilityButton: View {
       isInputVisible.toggle()
     }) {
       Image(systemName: isInputVisible ? "eye.slash.fill" : "eye.fill")
+        .font(.footnote)
     }
     #if !os(tvOS)
     .buttonStyle(.borderless)
